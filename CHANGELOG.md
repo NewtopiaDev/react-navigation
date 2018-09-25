@@ -7,9 +7,51 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.15.0] - [2018-09-14](https://github.com/react-navigation/react-navigation/releases/tag/2.15.0)
+
 ### Changed
+
+- Updated react-navigation-safe-area-view to 0.11.0 to support iPhoneXS Max and iPhoneXR
+
+## [2.14.2] - [2018-09-14](https://github.com/react-navigation/react-navigation/releases/tag/2.14.2)
+
+### Changed
+
+- Updated react-navigation-stack to 0.5.1 to clamp interpolated values in animations.
+
+## [2.14.1] - [2018-09-14](https://github.com/react-navigation/react-navigation/releases/tag/2.14.1)
+
+### Changed
+
+- Updated react-navigation-stack to 0.5.0 to solve black screen on back and unpressable header area with hidden header when using react-native-screens.
+
+## [2.14.0] - [2018-09-12](https://github.com/react-navigation/react-navigation/releases/tag/2.14.0)
+
+### Added
+
+- Updated react-navigation-stack to add experimental support for react-navigation-screens. See https://github.com/kmagiera/react-native-screens for information about how to enable it.
+
+### Changed
+
+- Updated react-native-safe-area-view to 0.10.0 to solve circular dependency issue (fixes https://github.com/react-navigation/react-navigation/issues/4973)
+
+## [2.13.0] - [2018-09-06](https://github.com/react-navigation/react-navigation/releases/tag/2.13.0)
+
+### Added
+
+- When `tabBarIcon` is a function it is now provided with a `horizontal` option that indicates whether horizontal tabs are being rendered (label to the right of the icon) or not.
+- Add some missing flow types ([1](https://github.com/react-navigation/react-navigation/pull/4836), [2](https://github.com/react-navigation/react-navigation/pull/4917)).
+
+### Changed
+
+- Updated react-navigation-stack to 0.3.0.
+- Updated react-navigation-tabs to 0.7.0.
 - Pinned `create-react-context` dependency to `0.2.2` (https://github.com/react-navigation/react-navigation/issues/4934)
 
+### Fixed
+
+- Fixes tab label font sizes in landscape and portrait.
+- Default tab bar background color and header background color are white on iOS.
 
 ## [2.12.1] - [2018-08-23](https://github.com/react-navigation/react-navigation/releases/tag/2.12.1)
 
@@ -156,7 +198,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Improved examples
 
-[Unreleased]: https://github.com/react-navigation/react-navigation/compare/2.12.1...HEAD
+[Unreleased]: https://github.com/react-navigation/react-navigation/compare/2.15.0...HEAD
+[2.15.0]: https://github.com/react-navigation/react-navigation/compare/2.14.2...2.15.0
+[2.14.2]: https://github.com/react-navigation/react-navigation/compare/2.14.1...2.14.2
+[2.14.1]: https://github.com/react-navigation/react-navigation/compare/2.14.0...2.14.1
+[2.14.0]: https://github.com/react-navigation/react-navigation/compare/2.13.1...2.14.0
+[2.13.0]: https://github.com/react-navigation/react-navigation/compare/2.12.1...2.13.0
 [2.12.1]: https://github.com/react-navigation/react-navigation/compare/2.12.0...2.12.1
 [2.12.0]: https://github.com/react-navigation/react-navigation/compare/2.11.2...2.12.0
 [2.11.2]: https://github.com/react-navigation/react-navigation/compare/2.11.1...2.11.2
